@@ -1,0 +1,14 @@
+D:\AI\AI_Agent_Development\Day1_learning_Dotnet\bin\Debug\net10.0\Day1_learning_Dotnet.exe
+D:\AI\AI_Agent_Development\Day1_learning_Dotnet\bin\Debug\net10.0\Day1_learning_Dotnet.deps.json
+D:\AI\AI_Agent_Development\Day1_learning_Dotnet\bin\Debug\net10.0\Day1_learning_Dotnet.runtimeconfig.json
+D:\AI\AI_Agent_Development\Day1_learning_Dotnet\bin\Debug\net10.0\Day1_learning_Dotnet.dll
+D:\AI\AI_Agent_Development\Day1_learning_Dotnet\bin\Debug\net10.0\Day1_learning_Dotnet.pdb
+D:\AI\AI_Agent_Development\Day1_learning_Dotnet\obj\Debug\net10.0\Day1_learning_Dotnet.GeneratedMSBuildEditorConfig.editorconfig
+D:\AI\AI_Agent_Development\Day1_learning_Dotnet\obj\Debug\net10.0\Day1_learning_Dotnet.AssemblyInfoInputs.cache
+D:\AI\AI_Agent_Development\Day1_learning_Dotnet\obj\Debug\net10.0\Day1_learning_Dotnet.AssemblyInfo.cs
+D:\AI\AI_Agent_Development\Day1_learning_Dotnet\obj\Debug\net10.0\Day1_learning_Dotnet.csproj.CoreCompileInputs.cache
+D:\AI\AI_Agent_Development\Day1_learning_Dotnet\obj\Debug\net10.0\Day1_learning_Dotnet.dll
+D:\AI\AI_Agent_Development\Day1_learning_Dotnet\obj\Debug\net10.0\refint\Day1_learning_Dotnet.dll
+D:\AI\AI_Agent_Development\Day1_learning_Dotnet\obj\Debug\net10.0\Day1_learning_Dotnet.pdb
+D:\AI\AI_Agent_Development\Day1_learning_Dotnet\obj\Debug\net10.0\Day1_learning_Dotnet.genruntimeconfig.cache
+D:\AI\AI_Agent_Development\Day1_learning_Dotnet\obj\Debug\net10.0\ref\Day1_learning_Dotnet.dll

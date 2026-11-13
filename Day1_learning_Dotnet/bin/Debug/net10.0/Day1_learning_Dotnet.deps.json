@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "Day1_learning_Dotnet/1.0.0": {
+        "runtime": {
+          "Day1_learning_Dotnet.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Day1_learning_Dotnet/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
