@@ -3,16 +3,11 @@ using System.Text;
 using System.Text.Json;
 
 var config = LoadConfig();
+var messages = new List<Dictionary<string, string>>();
 
-if (args.Length > 0 && (args[0].Equals("hello", StringComparison.OrdinalIgnoreCase) || args[0].Equals("--hello", StringComparison.OrdinalIgnoreCase)))
-{
-    await AskSingleQuestionAsync(config);
-    return;
-}
+await RunAssistantLoopAsync(config, messages);
 
-await RunAssistantLoopAsync(config);
-
-static async Task RunAssistantLoopAsync(AppConfig config)
+static async Task RunAssistantLoopAsync(AppConfig config, List<Dictionary<string, string>> messages)
 {
     using var client = new HttpClient();
 
@@ -26,43 +21,41 @@ static async Task RunAssistantLoopAsync(AppConfig config)
             continue;
         }
 
+        messages.Add(new Dictionary<string, string>
+        {
+            ["role"] = "user",
+            ["content"] = input
+        });
+
         if (input.Equals("exit", StringComparison.OrdinalIgnoreCase) ||
             input.Equals("quit", StringComparison.OrdinalIgnoreCase))
         {
             break;
         }
 
-        var response = await SendPromptAsync(client, config, input);
-        Console.WriteLine(response);
+        var response = await SendPromptAsync(client, config, messages);
+        var aiReply = response;
+
+        Console.WriteLine(aiReply);
+
+        messages.Add(new Dictionary<string, string>
+        {
+            ["role"] = "assistant",
+            ["content"] = aiReply
+        });
+
+        Console.WriteLine(JsonSerializer.Serialize(messages));
     }
 }
 
-static async Task AskSingleQuestionAsync(AppConfig config)
-{
-    Console.Write("Whats on your mind? ");
-    var input = Console.ReadLine();
-
-    if (string.IsNullOrWhiteSpace(input))
-    {
-        Console.WriteLine("No input provided.");
-        return;
-    }
-
-    using var client = new HttpClient();
-    var response = await SendPromptAsync(client, config, $"What is {input}?");
-    Console.WriteLine(response);
-}
-
-static async Task<string> SendPromptAsync(HttpClient client, AppConfig config, string prompt)
+static async Task<string> SendPromptAsync(HttpClient client, AppConfig config, List<Dictionary<string, string>> messages)
 {
     var endpoint = config.BaseUrl.TrimEnd('/') + "/chat/completions";
+
     var payload = new
     {
         model = config.Model,
-        messages = new[]
-        {
-            new { role = "user", content = prompt }
-        }
+        messages = messages.Select(m => new { role = m["role"], content = m["content"] }).ToArray()
     };
 
     var json = JsonSerializer.Serialize(payload);

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\AI\\AI_Agent_Development\\Day1_learning_dotnet\\Day1_learning_Dotnet.csproj": {}
+    "D:\\AI\\AI_Agent_Development\\Day1_learning_Dotnet\\Day1_learning_Dotnet.csproj": {}
   },
   "projects": {
-    "D:\\AI\\AI_Agent_Development\\Day1_learning_dotnet\\Day1_learning_Dotnet.csproj": {
+    "D:\\AI\\AI_Agent_Development\\Day1_learning_Dotnet\\Day1_learning_Dotnet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\AI\\AI_Agent_Development\\Day1_learning_dotnet\\Day1_learning_Dotnet.csproj",
+        "projectUniqueName": "D:\\AI\\AI_Agent_Development\\Day1_learning_Dotnet\\Day1_learning_Dotnet.csproj",
         "projectName": "Day1_learning_Dotnet",
-        "projectPath": "D:\\AI\\AI_Agent_Development\\Day1_learning_dotnet\\Day1_learning_Dotnet.csproj",
+        "projectPath": "D:\\AI\\AI_Agent_Development\\Day1_learning_Dotnet\\Day1_learning_Dotnet.csproj",
         "packagesPath": "C:\\Users\\navee\\.nuget\\packages\\",
-        "outputPath": "D:\\AI\\AI_Agent_Development\\Day1_learning_dotnet\\obj\\",
+        "outputPath": "D:\\AI\\AI_Agent_Development\\Day1_learning_Dotnet\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

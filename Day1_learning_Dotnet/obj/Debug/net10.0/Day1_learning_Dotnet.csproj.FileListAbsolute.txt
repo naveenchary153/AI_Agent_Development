@@ -12,3 +12,4 @@ D:\AI\AI_Agent_Development\Day1_learning_Dotnet\obj\Debug\net10.0\refint\Day1_le
 D:\AI\AI_Agent_Development\Day1_learning_Dotnet\obj\Debug\net10.0\Day1_learning_Dotnet.pdb
 D:\AI\AI_Agent_Development\Day1_learning_Dotnet\obj\Debug\net10.0\Day1_learning_Dotnet.genruntimeconfig.cache
 D:\AI\AI_Agent_Development\Day1_learning_Dotnet\obj\Debug\net10.0\ref\Day1_learning_Dotnet.dll
+D:\AI\AI_Agent_Development\Day1_learning_Dotnet\obj\Debug\net10.0\Day1_learning_Dotnet.sourcelink.json
